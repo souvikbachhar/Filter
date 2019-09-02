@@ -80,14 +80,17 @@
 			<version>2.6.1</version>
 			<scope>compile</scope>
 		</dependency>
-
-
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.6.1</version>
 			<scope>compile</scope>
 		</dependency>
+		        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.10</version>
+        </dependency>
 	</dependencies>
 	<build>
 		<finalName>Rest</finalName>
