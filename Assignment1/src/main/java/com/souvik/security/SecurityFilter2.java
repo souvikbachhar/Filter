@@ -22,7 +22,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class SecurityFilter2 implements Filter {
 
-	private static final Logger LOG = LoggerFactory.getLogger(SecurityFilter2.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(SecurityFilter2.class);
 
 	private String username = "a";
 
@@ -50,7 +50,7 @@ public class SecurityFilter2 implements Filter {
 					if (basic.equalsIgnoreCase("Basic")) {
 						try {
 							String credentials = new String(Base64.decodeBase64(st.nextToken()), "UTF-8");
-						//	LOG.debug("Credentials: " + credentials);
+							LOGGER.info("Creds: " + credentials);
 							int p = credentials.indexOf(":");
 							if (p != -1) {
 								String _username = credentials.substring(0, p).trim();

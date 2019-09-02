@@ -25,5 +25,9 @@ public class MyController {
 	public @ResponseBody String sayHello(){
 		return "Hello";
 	}
+	
+	public  String sayName(){
+		return "Bank Name: ICICI";
+	}
 
 }
